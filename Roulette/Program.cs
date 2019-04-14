@@ -10,6 +10,17 @@ namespace Roulette
     {
         static void Main(string[] args)
         {
+            Wheel wheel = new Wheel();
+            Bets bets = new Bets();                 
+
+            wheel.ball = wheel.GetNumber();
+            wheel.GetRoll(wheel.ball);
+
+            Console.WriteLine();
+            bets.TotalBets(wheel);
+
+            Console.ReadKey();
+
         }
     }
 }
